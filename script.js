@@ -26,3 +26,12 @@ openBtn.addEventListener('click', getModal);
 closeBtn.addEventListener('click', closeModal);
 
 inputEle.addEventListener('keyup', handler);
+
+window.onclick = function (e) {
+  console.log(e.target);
+  console.log(modal);
+  if (e.target === modal) {
+    console.log('true');
+    closeModal();
+  }
+};
